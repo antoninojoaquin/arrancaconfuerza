@@ -1,0 +1,131 @@
+/* about.css */
+
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+/* === HERO === */
+.about-hero {
+  padding-top: calc(var(--navbar-h) + 5rem);
+  padding-bottom: 4rem;
+}
+
+.about-hero__title {
+  font-size: clamp(4rem, 11vw, 9rem);
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+.about-hero__sub {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 50ch;
+}
+
+/* === HISTORIA === */
+.about-history { border-top: 1px solid var(--border); }
+
+.about-history__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-history__title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: var(--text);
+}
+
+.about-history__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.about-history__text p {
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+/* === MISIÓN === */
+.about-mission { border-top: 1px solid var(--border); }
+
+.mission-quote {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  color: var(--text);
+  line-height: 1.3;
+  border-left: 4px solid var(--accent);
+  padding-left: 2rem;
+  max-width: 800px;
+}
+
+/* === EQUIPO === */
+.team { border-top: 1px solid var(--border); }
+
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--border);
+  gap: 0;
+}
+
+.member-card {
+  padding: 2.5rem 2rem;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: background var(--ease);
+}
+
+.member-card:last-child { border-right: none; }
+.member-card:hover { background: var(--surface); }
+
+.member-card__num {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--accent);
+  opacity: 0.25;
+  line-height: 1;
+}
+
+.member-card__name {
+  font-size: 1.75rem;
+  color: var(--text);
+}
+
+.member-card__roles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.member-card__roles li {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.member-card__roles li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .about-history__inner { grid-template-columns: 1fr; gap: 2rem; }
+  .team__grid { grid-template-columns: 1fr; }
+  .member-card { border-right: none; border-bottom: 1px solid var(--border); }
+  .member-card:last-child { border-bottom: none; }
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — Arrancá con Fuerza</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <a class="navbar__logo" href="index.html">Arrancá<span>.</span></a>
+      <ul class="navbar__links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="planes.html">Planes</a></li>
+        <li><a href="clases.html">Clases</a></li>
+        <li><a href="contact.html" class="active">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- HERO DE SECCIÓN -->
+    <section class="contact-hero section">
+      <div class="container">
+        <div class="contact-hero__content">
+          <p class="contact-hero__label">Equipo Dinamita</p>
+          <h1 class="contact-hero__title">Hablemos.</h1>
+          <p class="contact-hero__sub">
+            ¿Tenés dudas sobre tu membresía, querés sumarte al equipo o simplemente querés saludar?
+            Completá el formulario y te respondemos en menos de 24&nbsp;horas.
+          </p>
+        </div>
+        <div class="contact-hero__deco" aria-hidden="true">
+          <span class="deco-word">FUERZA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO + EQUIPO -->
+    <section class="contact-main section">
+      <div class="container contact-grid">
+
+        <!-- FORMULARIO -->
+        <div class="contact-form-wrap">
+          <h2 class="contact-form-wrap__heading">Envianos un mensaje</h2>
+
+          <form class="contact-form" id="contactForm" novalidate>
+
+            <div class="field">
+              <label class="field__label" for="nombre">Nombre completo</label>
+              <input
+                class="field__input"
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="email">Correo electrónico</label>
+              <input
+                class="field__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tu@email.com"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="rol">¿Quién sos?</label>
+              <div class="field__select-wrap">
+                <select class="field__input field__select" id="rol" name="rol" required>
+                  <option value="" disabled selected>Seleccioná tu rol</option>
+                  <option value="administrador">Administrador</option>
+                  <option value="socio">Socio</option>
+                </select>
+                <span class="field__select-arrow" aria-hidden="true">▾</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="mensaje">Mensaje</label>
+              <textarea
+                class="field__input field__textarea"
+                id="mensaje"
+                name="mensaje"
+                placeholder="Contanos en qué podemos ayudarte…"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary contact-form__submit">
+              Enviar mensaje
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+
+            <p class="contact-form__success" id="formSuccess" aria-live="polite">
+              ✓ ¡Mensaje enviado! Te contactamos pronto.
+            </p>
+
+          </form>
+        </div>
+
+        <!-- EQUIPO -->
+        <aside class="team-wrap">
+          <h2 class="team-wrap__heading">El equipo</h2>
+          <p class="team-wrap__sub">Las personas detrás de Arrancá con Fuerza.</p>
+
+          <ul class="team-list">
+
+            <li class="team-card">
+              <div class="team-card__avatar" aria-hidden="true">JA</div>
+              <div class="team-card__info">
+                <strong class="team-card__name">Joaquín Antonino</strong>
+                <span class="team-card__roles">
+                  <span class="role-tag role-tag--lead">Líder técnico</span>
+                  <span class="role-tag">Analista funcional</span>
+                </span>
+              </div>
+            </li>
+
+            <li class="team-card">
+              <div class="team-card__avatar" aria-hidden="true">JE</div>
+              <div class="team-card__info">
+                <strong class="team-card__name">Joaquín Esposito</strong>
+                <span class="team-card__roles">
+                  <span class="role-tag">Backend</span>
+                  <span class="role-tag">Data</span>
+                  <span class="role-tag">Ciberseguridad</span>
+                </span>
+              </div>
+            </li>
+
+            <li class="team-card">
+              <div class="team-card__avatar" aria-hidden="true">DC</div>
+              <div class="team-card__info">
+                <strong class="team-card__name">Demián Cirión</strong>
+                <span class="team-card__roles">
+                  <span class="role-tag">Frontend</span>
+                  <span class="role-tag">UI-UX</span>
+                  <span class="role-tag">QA</span>
+                </span>
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="team-badge">
+            <span class="team-badge__label">Equipo Dinamita</span>
+            <span class="team-badge__year">© 2025</span>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__logo">Arrancá<span>.</span></span>
+      <nav class="footer__nav" aria-label="Footer nav">
+        <a href="index.html">Inicio</a>
+        <a href="planes.html">Planes</a>
+        <a href="clases.html">Clases</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+      <p class="footer__copy">© 2025 Equipo Dinamita. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      const form    = document.getElementById('contactForm');
+      const success = document.getElementById('formSuccess');
+
+      if (!form) return;
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        const btn = form.querySelector('.contact-form__submit');
+        btn.disabled = true;
+        btn.textContent = 'Enviando…';
+
+        setTimeout(function () {
+          form.reset();
+          btn.disabled = false;
+          btn.innerHTML = 'Enviar mensaje <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
+          success.classList.add('visible');
+
+          setTimeout(function () {
+            success.classList.remove('visible');
+          }, 5000);
+        }, 900);
+      });
+    })();
+  </script>
+</body>
+</html>

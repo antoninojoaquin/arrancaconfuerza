@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — Arrancá con Fuerza</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">Arrancá con <span>Fuerza</span></a>
+      <nav class="navbar__links">
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html" class="active">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="contact-hero">
+      <div class="container">
+        <p class="section-label">Contacto</p>
+        <h1 class="contact-hero__title">Hablemos</h1>
+        <p class="contact-hero__sub">¿Tenés preguntas sobre el sistema? Mandanos un mensaje.</p>
+      </div>
+    </section>
+
+    <section class="section contact-body">
+      <div class="container contact-body__inner">
+
+        <!-- FORMULARIO -->
+        <div class="contact-form-wrap">
+          <form class="contact-form" action="#" method="post">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribí tu mensaje acá..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          </form>
+        </div>
+
+        <!-- EQUIPO -->
+        <div class="contact-team">
+          <p class="section-label">Equipo Dinamita</p>
+          <div class="contact-team__list">
+            <div class="contact-member">
+              <span class="contact-member__name">Joaquín Antonino</span>
+              <span class="contact-member__role">Líder técnico · Analista funcional</span>
+            </div>
+            <div class="contact-member">
+              <span class="contact-member__name">Joaquín Esposito</span>
+              <span class="contact-member__role">Backend · Data Engineer · Ciberseguridad</span>
+            </div>
+            <div class="contact-member">
+              <span class="contact-member__name">Demián Cirión</span>
+              <span class="contact-member__role">Frontend · UI/UX · QA</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <p class="footer__logo">Arrancá con <span>Fuerza</span></p>
+        <p class="footer__copy">© 2025 Equipo Dinamita</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

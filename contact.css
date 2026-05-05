@@ -1,0 +1,122 @@
+/* contact.css */
+
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+/* === HERO === */
+.contact-hero {
+  padding-top: calc(var(--navbar-h) + 5rem);
+  padding-bottom: 4rem;
+}
+
+.contact-hero__title {
+  font-size: clamp(4rem, 11vw, 9rem);
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.contact-hero__sub {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* === BODY === */
+.contact-body { border-top: 1px solid var(--border); }
+
+.contact-body__inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+/* === FORMULARIO === */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.form-group input,
+.form-group textarea {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.875rem 1rem;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: border-color var(--ease);
+  resize: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: var(--text-muted); opacity: 0.5; }
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* === EQUIPO === */
+.contact-team {
+  padding-top: 0.5rem;
+}
+
+.contact-team__list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+}
+
+.contact-member {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  transition: background var(--ease);
+}
+
+.contact-member:last-child { border-bottom: none; }
+.contact-member:hover { background: var(--surface); }
+
+.contact-member__name {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--text);
+  letter-spacing: 0.03em;
+}
+
+.contact-member__role {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .contact-body__inner { grid-template-columns: 1fr; gap: 3rem; }
+}

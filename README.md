@@ -18,10 +18,13 @@ arrancaconfuerza/
 │
 ├── assets/
 │   ├── css/
-│       ├── style.css
-│       ├── home.css
-│       ├── about.css
-│       └── contact.css
+│   │   ├── style.css
+│   │   ├── home.css
+│   │   ├── about.css
+│   │   └── contact.css
+│   │
+│   └── images/
+│       └── logo.png
 │
 ├── docs/
 │   ├── equipo.md

@@ -1,5 +1,7 @@
 # Arrancá con Fuerza
 
+<img src="assets/images/logo.png" alt="Arrancá con Fuerza" height="200" />
+
 Sistema de gestión de gimnasios — landing page informativa.
 
 🔗 **Demo:** [antoninojoaquin.github.io/arrancaconfuerza](https://antoninojoaquin.github.io/arrancaconfuerza/)
